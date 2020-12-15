@@ -1,20 +1,21 @@
-import './App.css';
-import logo from './github_logo.png'
+import './App.scss';
+import logo from './assets/github_logo.png'
+
 
 function App() {
   return (
     <div className="app">
-      <header>
-        <a href="/newroom">+ Create Room</a>
+      <header className="link-create-room">
+        <a className="createRoom" href="/newroom">+ Create Room</a>
       </header>
 
-      <main>
+      <main className="main-home">
         <h1>Yakoot!</h1>
         <input type="text" placeholder="Game PIN" className="gamePin input"></input>
         <button type="submit" className="buttonEnter input">Enter</button>
       </main>
 
-      <footer>
+      <footer className="link-to-github">
         <a target="_blank" href="https:github.com/talis-fb/yakoot">
           <img src={logo}></img>
         </a>

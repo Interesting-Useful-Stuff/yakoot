@@ -1,0 +1,42 @@
+@import 'assets/global';
+
+.homeLink {    
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+
+    font-family: 'Fontdiner Swanky';
+    text-decoration: none;
+    color: $color-black;
+    transition: 0.2s;
+    font-size: x-large;
+    &:hover {
+        color: rgb(85, 84, 84);
+    }
+}
+
+.header-createRoom {
+    width: 100%;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-rows: 1fr; */
+
+    padding: 10px;
+    border-bottom: 1px solid gray;
+
+    .aboutQuiz {
+        grid-column-start: 2;
+        grid-column-end: 5;
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .aboutQuiz > .finishQuiz {
+        text-align: right; 
+    }
+}

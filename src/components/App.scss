@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'ubuntu';
+}
+  
+.app {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-create-room {
+    margin-top: 15px; 
+    .createRoom {
+        background-color: rgba(255, 255, 255, 0.11);
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.466);
+        text-decoration: none;
+        padding: 7px;
+        transition: 0.1s;
+    }
+    .createRoom:hover {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.main-home {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 50pt;
+        font-family: 'Fontdiner Swanky';
+    }
+    .input {
+        width: 100%;
+        height: 50px;
+        color: black;
+    }
+    .gamePin {
+        color: black;
+        text-align: center;
+        font-size: 15pt;
+        background-color: aliceblue;
+        border: 0px;
+        border-color: solid 9px gray;
+    }
+    .gamePin::placeholder {
+        color: gray;
+        text-align: center;
+        font-size: 15pt;
+    }
+    .buttonEnter {
+        color: aliceblue; 
+        background-color: black;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 15pt;
+    }
+    & > * {
+        margin-top: 6px;
+    }
+}
+
+.link-to-github img {
+    height: 50px;
+}
