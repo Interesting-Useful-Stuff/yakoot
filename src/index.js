@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './components/assets/global.scss'
+//Import of global styles
+import './assets/global.scss'
 import './index.css';
 
+//Import of Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 

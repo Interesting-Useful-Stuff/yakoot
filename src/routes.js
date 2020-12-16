@@ -1,7 +1,7 @@
 import { BrowserRouter, Route } from 'react-router-dom'
 
-import Home from './components/App';
-import CreateRoom from './components/createRoom'
+import Home from './pages/Home/index';
+import CreateRoom from './pages/CreateRoom/index'
 
 function routes(params) {
     return (

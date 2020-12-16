@@ -1,4 +1,4 @@
-import './createRoom.scss'
+import './index.scss'
 
 function createRoom(){
     return (

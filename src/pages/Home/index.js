@@ -1,5 +1,5 @@
-import './App.scss';
-import logo from './assets/github_logo.png'
+import './index.scss';
+import logo from '../../assets/github_logo.png'
 
 
 function App() {
