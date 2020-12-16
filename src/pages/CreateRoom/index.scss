@@ -17,26 +17,37 @@
     }
 }
 
+.createRoom {
+    display: block;
+}
+
 .header-createRoom {
     width: 100%;
-    grid-area: header;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    /* grid-template-rows: 1fr; */
-
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    
     padding: 10px;
     border-bottom: 1px solid gray;
 
-    .aboutQuiz {
-        grid-column-start: 2;
-        grid-column-end: 5;
-
-        display: flex;
-        justify-content: center;
-
+    .block {
+        flex-grow: 4;
     }
 
-    .aboutQuiz > .finishQuiz {
+    .finishQuiz {
         text-align: right; 
+    }
+
+}
+
+.question-choosed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+    & > * {
+        margin: 10px;
     }
 }

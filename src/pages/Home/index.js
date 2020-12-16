@@ -4,7 +4,7 @@ import logo from '../../assets/github_logo.png'
 
 function App() {
   return (
-    <div className="app">
+    <div className="Home">
       <header className="link-create-room">
         <a className="createRoom" href="/newroom">+ Create Room</a>
       </header>

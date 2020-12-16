@@ -1,0 +1,30 @@
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    & > * {
+        margin-right: 20px;
+    }
+
+    .numberQuestions {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 100%;
+        & :nth-child(1){
+            margin-right: 4px;
+        }
+        // & :nth-clild(1.5) = Text
+        & :nth-child(2){
+            margin-left: 4px;
+        }
+    }
+
+    .subject {
+        //height: 50%;
+    }
+}
