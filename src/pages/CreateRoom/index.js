@@ -9,8 +9,14 @@ class createRoom extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            questions: [1]
+            blocks: [1]
         }
+
+        this.removeBlock = this.removeBlock.bind(this)
+    }
+    removeBlock(numberOfBlock){
+        const newArray = this.state.blocks.filter( block => block!==numberOfBlock )
+        this.setState({ blocks: newArray })
     }
     render(){
         return (
@@ -20,7 +26,7 @@ class createRoom extends React.Component{
                         <a href="/" className="homeLink">Yakoot!</a>
                     </div>
 
-                    <BlockAboutQuiz />
+                    <BlockAboutQuiz numberQuestions={this.state.blocks.length} />
 
                     <div className="finishQuiz">
                         <button type="button" class="btn btn-success">Finish</button>
@@ -32,7 +38,7 @@ class createRoom extends React.Component{
                         id="addQuestion" 
                         className="btn btn-success" 
                         onClick={ () => {
-                            this.setState({ questions: [...this.state.questions, this.state.questions.length+1 ] })
+                            this.setState({ blocks: [...this.state.blocks, this.state.blocks.length+1 ] })
                             console.log(this.state)
                             }
                         }
@@ -41,7 +47,7 @@ class createRoom extends React.Component{
                     </button>
 
                     {/* Block of Questions */}
-                    {this.state.questions.map( print => <Question  number={print} /> )} 
+                    {this.state.blocks.map( numberOfBlock => <Question  number={numberOfBlock} removeBlock={this.removeBlock} /> )} 
                 </main>  
             </div>
         )
